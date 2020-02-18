@@ -226,30 +226,30 @@ text-decoration: none;
 
 
 
-.searchbox{
+.searchbox {
+    width: 87%;
     font-family: Maven Pro;
     font-size: 0.5rem;
-    border-style:none;
+    border-style: none;
     text-align: left;
     border-radius: 20px;
-    padding: 2% ;
+    padding: 2%;
     margin-left: 5%;
 }
-.searchbutton{
-    right: -2%;
-    top: -2px;
-    font-size: 0.6rem;
+.searchbutton {
+    right: 0%;
+    top: 0px;
+    font-size: 0.5rem;
     position: absolute;
     display: flex;
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     border-radius: 50px;
     background-color: #ff8a00;
     color: white;
     box-shadow: none;
-    border: none;
+    border: none
 }
-
 
 
 .create-campaign-button{
@@ -996,7 +996,62 @@ margin-top: 10%;
     top: 0;
 }
 
+.folder-row {
+    margin: 1rem -8%;
+}
 
+.footer-left-sidebar {
+    position: fixed;
+    bottom: 5%;
+}
+
+
+
+.leads-center-main-row3-btn {
+    border-radius: 30px;
+    margin: 0 0.2rem;
+    text-align: center;
+    border-color: rgb(48, 73, 83);
+    font-size: 0.7rem;
+    color: rgb(48, 73, 83);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+.icon-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+}
+.searchbutton {
+    right: 0%;
+    top: 0px;
+    font-size: 0.5rem;
+    position: absolute;
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    background-color: #ff8a00;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+.leads-icon {
+    padding: 1% 5%;
+    color: lightslategray;
+}
+
+.page-item.active .page-link {
+    border-radius: 15px;
+    z-index: 3;
+    color: #fff;
+    background-color: #304953;
+    border-color: #007bff;
+}
 
 
 
