@@ -1,0 +1,1076 @@
+
+
+body{
+    font-family: Maven Pro;
+}
+.main-container{
+font-family: Maven Pro;
+height: 100%;
+}
+.main-row{
+height: 100%;
+}
+
+
+.tablet-only{
+    display: none;
+}
+.center-main{
+    background:#eff2f9;;
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+.left-main{
+    height: 100%;
+    padding-right: 0;
+}
+.right-main{
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.headerbar1{
+    display: none;
+}
+
+
+
+
+.searchIcon{
+    margin: auto;
+}
+
+
+
+/* left-main */
+
+
+/* left-sidebar start */
+.sidebar-desktop
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: fit-content;
+    max-height: 100vh;
+}
+.brand
+{
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.brand-img
+{
+    width: 3rem;
+}
+.brand-text{
+    background: linear-gradient(#21f58b,#19aafb);
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.list-page-2{
+    display: grid;
+}
+
+.list-item{
+    font-size: 0.8rem;
+    color: lightslategray;
+    margin: 1rem;
+}
+
+
+a:hover{
+text-decoration: none;
+}
+.left-sb-icons{
+    font-size: 0.9rem !important;
+    margin-right: 5%;
+}
+
+.list-pages{
+    width: 100%;
+    overflow: hidden;
+    height: 60vh;
+    margin-bottom: 3rem;
+    overflow-y: scroll;    
+}
+
+
+.left-sidehead{
+    color:lightgray;
+    font-size: 0.7rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+.item-focus{
+    color: darkblue;
+}
+.list-focus{
+    color: #2f81e7;
+    border-right-style:solid;
+    border-right-color: #2f81e7;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(29, 165, 199, 0.5); 
+}
+::-webkit-scrollbar {
+    min-height: 10px;
+    max-height: 10px;
+    width: 0.5rem;
+}
+ 
+::-webkit-scrollbar-track {
+    display: none;
+    
+}
+/* end of sidebar-list */
+
+
+
+
+/* footer left-bar starts */
+
+.footer-left-sidebar{
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-row-1{
+    width: 150%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+
+}
+
+.foo-img{
+    margin: 2%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    object-fit: cover;
+}
+
+.foo-text-1{
+    display: grid;
+}
+.foo-text-1-big{
+    color: darkblue;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.foo-text-1-small{
+    font-size: xx-small;
+}
+.footer-row-2{
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0;
+    width: 100%;
+}
+.footer-button{
+    align-content: center;
+    height: fit-content;
+    border-radius: 30px;
+    width: 100%;
+    background-color: orange;
+    color: white;
+}
+.footer-btn-text{
+    padding: 0;
+    margin: 0;
+    font-size: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Center Part starts here */
+
+.leads-center-row1{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+
+.searchcontainer{
+    display: flex;
+    background: white;
+    position: relative;
+    width: 40% ;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: whitesmoke;
+    box-shadow: 0px 0px 2px 0px lightgrey;
+}
+
+
+
+.searchbox{
+    font-family: Maven Pro;
+    font-size: 0.5rem;
+    border-style:none;
+    text-align: left;
+    border-radius: 20px;
+    padding: 2% ;
+    margin-left: 5%;
+}
+.searchbutton{
+    right: -2%;
+    top: -2px;
+    font-size: 0.6rem;
+    position: absolute;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: #ff8a00;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+
+
+.create-campaign-button{
+    display: flex;
+    border-radius: 20px;
+    width: 20%;
+    background: #ff8a00;
+    margin: 0 1rem;
+    box-shadow: 1px 17px 20px 0px rgba(253, 117, 68, 0.39);
+    height: 1.8rem;
+    border: none;
+    text-align: center;
+}
+
+.create-campaign-button-text{
+    font-family: Maven Pro;
+    font-size: 0.5rem;
+    display: flex;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+}
+.create-campaign-button-icon{
+     display: flex;
+     margin: 0;
+     padding: 2%;
+     font-size: 0.6rem;
+     align-self:center ;
+}
+
+.leads-center-row2{
+    margin: 1rem;
+    padding: 0;
+    border-bottom: solid 1px white;
+
+}
+.leads-center-row2-1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-text{
+    font-size: 1.25rem;
+}
+.picontainer{
+    display: flex;
+    width: 20%;
+    margin-top: 1%;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.main-image{
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+.leads-center-main-row2-2
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.info-img{
+    width: 0.8rem;
+    height: 0.8rem;
+
+}
+
+
+.leads-center-main-row3{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-containers{
+    width: 50%;
+    display: flex;
+}
+.leads-center-main-row3-btn{
+    border-radius: 30px;
+    margin: 0 1rem;
+    text-align: center;
+    border-color: rgb(48, 73, 83);
+    font-size: 0.7rem;
+    color: rgb(48, 73, 83);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center; 
+}
+
+
+
+
+.leads-center-main-row4{
+    padding: 1% 2%;
+    border-radius: 10px;
+    background: white;
+
+}
+.leads-center-main-row4-1{
+    margin: 1rem 0;
+    padding: 1% 0;
+    border-width: 1px;
+    border-color: skyblue;
+    border-bottom-style: solid;
+
+}
+
+.leads{
+    display: flex;
+    justify-content: space-around;
+    color: darkgrey;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Maven Pro;
+    width: 70%;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.leads .active{
+    color:black;
+}
+
+
+.leads-icon-main{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-container
+{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+.leads-icon{
+
+    padding: 1% 5%;
+    color: dimgrey;
+}
+.leads-table{
+    width: 100%;
+}
+
+
+
+.tablerow{
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tablerow:hover{
+    background: rgb(56, 166, 209);
+
+}
+.tablerow:hover .datacell{
+    color: white;
+}
+.datacell{
+    
+    font-size: 0.7rem;
+    color:skyblue;
+    padding: 2% 0;
+    margin: 0 1%;
+}
+
+
+
+.mycheckbox{
+    width: fit-content;
+}
+
+
+.table-img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.action-button{
+    background: white;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 2%;
+    align-items: center;
+    border-radius: 30px;
+    width: 7rem;
+}
+
+.action-text{
+    padding: 2% 5%;
+
+}
+.page-number{
+    font-size: 0.6rem;
+    color: grey;
+}
+.leads-center-main-row5{
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.pagein{
+    font-size: 0.6rem;
+}
+.page-item .page-link{
+    background: transparent;
+    border:none;
+
+}
+
+.pn .page-link{
+    color: white;
+    border: none;
+    border-radius: 15px;
+    border-top-left-radius:15px ;
+    background-color:rgb(48, 73, 83); 
+}
+
+
+
+
+
+
+/* Center-ends here */
+
+
+
+
+
+
+/* Right Starts here */
+
+.right-main-container{
+    margin: 1rem auto;
+}
+
+.right-title{
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.right-main-text{
+    font-size: 1.25rem;
+}
+
+.right-main-con{
+    margin: 0;
+    padding: 0;
+}
+
+.right-main-1-inner-1{
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.right-img{
+    width: 4rem;
+    height: 4rem;
+}
+.right-text-inner{
+    
+    margin: 1% 5%;
+    font-size: 1rem;
+}
+.right-small-text
+{
+    font-size: 0.5rem;
+    margin: 0 auto;
+    padding: 0 6%; 
+    border-radius: 20px;
+    width: 20%;
+    background-color: lightskyblue;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.right-inner-row1{
+    display:flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.underline{
+   padding-bottom:5%;
+    border-bottom: 1px solid lightgrey;
+}
+.button123{
+    border:none;
+    background-color: #ff8a00;
+}
+
+
+.right-main-row3{
+    margin-top: 1rem;
+}
+
+.interest-text{
+    font-size: 1rem;
+    color: dimgrey;
+}
+
+
+/* The container */
+.radiobutton {
+    display: inline-flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right:10px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radiobutton input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radiobutton:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radiobutton input:checked ~ .checkmark {
+    background-color: orange;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radiobutton input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radiobutton .checkmark:after {
+       top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+/* Radio styles end here */
+
+
+
+.right-main-row3-1 {
+    width: 110%;
+}
+
+.availability-row{
+    width: 100%;
+    padding: 0;
+
+}
+.datepicker{
+    width:60%;
+    border-radius:10px;
+    background: #eff2f9;
+    padding: 1%;
+
+}
+
+.dp-inner{
+    width:100%;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.dp-row{
+    margin: 0 auto;
+    padding: 0 5%;
+    font-size: 0.8rem;
+    width: 100%;
+    display: flex;
+justify-content: space-between;
+border-radius: 15px;
+}
+
+
+.dp-row:hover{
+    background: darkorange;
+
+}
+
+.timepicker{
+    width:30%;
+    border-radius: 10px;
+    background: #eff2f9;
+    padding: 5%;
+
+}
+.tp-inner{
+    
+    font-size: 0.8rem;
+    text-align: center;
+}
+.tp-inner-big{
+    font-size: 1rem;
+    text-align: center
+    ;
+    margin: 5% auto;
+}
+
+.meridian-picker{
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.mer-button{
+    
+    font-size: 0.6rem;
+    background: transparent;
+    border: none;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.right-main-container4{
+    margin: 1%;
+    padding-top: 10%;
+    
+}
+
+
+.mytext{
+    width: 100%;
+border-radius: 10px;
+background: #eff2f9;
+
+
+}
+
+.word-count{
+    font-size: 0.6rem;
+    color: dimgrey;
+    text-align: end;
+}
+
+.note-text{
+    display: inline-flex;
+}
+
+
+.bgonge{
+    font-size: 0.8rem;
+    background-color: #ff8a00;
+    color: white;
+    height: fit-content;
+    padding: 1% 0;
+}
+                
+.lcade{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats{
+    font-size: 1rem;
+    color: dimgrey;
+}
+
+
+.right-main-container5-a{
+margin: auto;
+display: flex;
+justify-content: center;
+
+
+}
+
+.lklk{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+ align-items: center;
+    width: 50%;
+    font-size: 0.8rem;
+    background-color: darkblue;
+    border-radius: 15px;
+    color: white;
+}
+
+.masm{
+    margin: 0 auto;
+text-align: center;
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:480px){
+    
+.headerbar{
+    margin: 0;
+    padding: 0; 
+    width: 95%;   
+    z-index: 1; 
+    justify-content: space-between;
+}
+
+.headerbar1{
+    display: none;
+}
+.sidebar-tablet{
+    display: none;
+}
+
+.mob-logo
+{
+    width: 2rem;
+    margin:1rem
+}
+.menuselect{
+    display: flex;
+    align-self: center;
+    color: grey;
+}
+
+.mobile-footer{
+    position: relative;
+}
+
+
+
+
+.left-main{
+    display: none;
+}
+.center-main{
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+.right-main{
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    overflow-y: hidden; 
+}
+.sidebar-mobile{
+    left: -100%;
+    background: white;
+    position: fixed;
+    width: 70vw;
+    z-index: 1000;
+    height: 100vh;
+    transition: linear;
+    transition-duration: 0.5s;
+}
+.mob-list-pages{
+    margin-top: 10%;
+    height: 70%;
+}
+
+.leads-center-row1{
+    margin-top: 10%;
+    display: block;
+}
+.searchcontainer{
+width: 98%;
+}
+.searchbox{
+    width: 80%;
+}
+.create-campaign-button{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+}
+.leads-center-main-row3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.tablerow{
+    width: 120%;
+}
+
+.leads-center-row2-1 {
+    display: block;
+    justify-content: flex-start;
+}
+.main-text{
+    text-align: center;
+}
+
+.main-image{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.picontainer {
+    display: flex;
+    width: 100%;
+    margin-top: 1%;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.button-containers {
+    width: 100%;
+    display: flex;
+}
+
+.leads-center-main-row4-2{
+    overflow: auto;
+}
+.selection-website{
+    display: none;
+}
+
+.select-table{
+    border-radius: 20px;
+    margin: 0 10%;
+    background: transparent;
+    font-size: 0.6rem;
+    padding: 0.2rem 1rem;
+}
+
+
+
+.pn .page-link{
+     
+    border-radius: 15px !important;
+}
+
+
+
+
+.right-title{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.right-main-con{
+    margin-top: 10%;
+
+}
+
+.right-main-row3{
+    margin-top: 10%;
+}
+
+
+.right-main-row3-1{
+    margin-top: 10%;
+}
+
+
+.right-main-container4{
+margin-top: 10%;
+}
+
+.right-main-container4 {
+    margin: 1%;
+    padding-top: 10%;
+    position: relative;
+}
+
+.word-count {
+    font-size: 0.6rem;
+    color: dimgrey;
+    text-align: end;
+    margin-left: 60%;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+
+
+
+
+
+
+
+
+.right-small-text {
+    font-size: 0.5rem;
+    margin: 0 auto;
+    padding: 2% 6%;
+    border-radius: 20px;
+    width: 20%;
+    background-color: #007bff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 770px){
+
+
+
+    .left-main{
+        display: none;
+    }
+
+    .headerbar1{
+        display: flex;
+        margin: 0;
+        padding: 0; 
+        width: 95%;   
+        z-index: 1; 
+        justify-content: space-between;
+    }
+ 
+    .pn .page-link{
+        color: white;
+        border: none;
+        border-radius: 15px;
+        border-top-left-radius:15px ;
+        background-color:rgb(48, 73, 83); 
+    }
+
+
+    .pn .page-link{
+     
+        border-radius: 15px !important;
+    }
+    
+
+    .mob-logo{
+        width: 2rem;
+        margin: 1rem;
+    }
+    .menuselect{
+        padding: 15px;
+    }
+
+    .tablet-only{
+        display: block;
+        left: -100%;
+        background: white;
+        position: fixed;
+        width: 70vw;
+        z-index: 1000;
+        height: 100vh;
+        transition: linear;
+        transition-duration: 0.5s;
+    }
+
+
+}
+
+@media only screen and (min-width:771px) and (max-width:1025px){
+
+.foo-text-1-big {
+    color: darkblue;
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.pn .page-link{
+    border-radius: 15px !important;
+}
+
+
+}
+

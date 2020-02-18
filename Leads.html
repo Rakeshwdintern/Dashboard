@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:500|Ubuntu|Nunito&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="leads.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="sidebar.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid main-container">
+        <div class="row main-row">
+
+
+
+            <!-- Mobile Sidebar -->
+
+
+
+            <div class="row d-flex d-sm-none headerbar">
+                <div class="logo-brand">
+                    <img src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="menuselect">
+                    <i class="fas fa-bars " onclick="showsidebar();"></i>
+                </div>
+            </div>
+            <div class="row  headerbar1">
+                <div class="logo-brand">
+                    <img src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="menuselect">
+                    <i class="fas fa-bars " onclick="showsidebar1();"></i>
+                </div>
+            </div>
+
+        
+
+            <div class="container d-block d-sm-none sidebar-mobile" id="sidebar-mobile">
+                <div class="logo-brand">
+                    <img   src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="list-pages mob-list-pages">
+                    <div class="list-page-1">
+                        <a class="list-item " href="index.html"><i
+                                class="material-icons left-sb-icons align-middle">card_travel</i>
+                            <span class=""> Dashboard </span> </a>
+                    </div>
+                    <div class="left-sidehead"><span>Dashboard</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Campaign
+                            </span> </a>
+                        <a href="leads.html" class="list-item list-focus item-focus"> <i
+                                class="material-icons left-sb-icons align-middle">local_bar</i>
+                            <span>
+                                Leads</span> </a>
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                Pending
+                            </span> </a>
+                        <a href="#" class="list-item"><i
+                                class="material-icons left-sb-icons align-middle">speaker_notes</i>
+                            <span>
+                                Follow up
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Contacted
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Closed
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="left-sidehead"><span>Others</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">calendar_today</i>
+                            <span>
+                                Calender
+                            </span> </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Users
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Profile
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Help
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-left-sidebar mobile-footer">
+                    <div class="row footer-row-1">
+                        <img class="rounded-circle foo-img" src="https://i.ytimg.com/vi/sPLvdKuea5M/maxresdefault.jpg"
+                            alt="" srcset="">
+                        <div class="foo-text-1">
+                            <p class="foo-text-1-big">The Grand By Hyatt </p>
+                            <p class="foo-text-1-small">MANAGER</p>
+                        </div>
+                    </div>
+                    <div class="footer-row-2">
+                        <button class="btn btn-regular footer-button">
+                            <p class="footer-btn-text">SIGNOUT</p>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+<!-- Tablet mode -->
+
+<div id="tablet-only" class="tablet-only">
+                    <div class="logo-brand">
+                    <img   src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="list-pages mob-list-pages">
+                    <div class="list-page-1">
+                        <a class="list-item " href="index.html"><i
+                                class="material-icons left-sb-icons align-middle">card_travel</i>
+                            <span class=""> Dashboard </span> </a>
+                    </div>
+                    <div class="left-sidehead"><span>Dashboard</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Campaign
+                            </span> </a>
+                        <a href="leads.html" class="list-item list-focus item-focus"> <i
+                                class="material-icons left-sb-icons align-middle">local_bar</i>
+                            <span>
+                                Leads</span> </a>
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                Pending
+                            </span> </a>
+                        <a href="#" class="list-item"><i
+                                class="material-icons left-sb-icons align-middle">speaker_notes</i>
+                            <span>
+                                Follow up
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Contacted
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Closed
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="left-sidehead"><span>Others</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">calendar_today</i>
+                            <span>
+                                Calender
+                            </span> </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Users
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Profile
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Help
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-left-sidebar mobile-footer">
+                    <div class="row footer-row-1">
+                        <img class="rounded-circle foo-img" src="https://i.ytimg.com/vi/sPLvdKuea5M/maxresdefault.jpg"
+                            alt="" srcset="">
+                        <div class="foo-text-1">
+                            <p class="foo-text-1-big">The Grand By Hyatt </p>
+                            <p class="foo-text-1-small">MANAGER</p>
+                        </div>
+                    </div>
+                    <div class="footer-row-2">
+                        <button class="btn btn-regular footer-button">
+                            <p class="footer-btn-text">SIGNOUT</p>
+                        </button>
+                    </div>
+                </div>
+
+</div>
+
+
+
+
+
+
+            <!-- Desktop Sidebar Started -->
+
+            <div class="col-lg-2 left-main">
+
+                <div class="container sidebar-desktop">
+                    <div class="brand">
+                        <img  src="builder.png" alt="" class="brand-img">
+                        <p class="brand-text">BUILDERSLEAD</p>
+                    </div>
+                    <div class="list-pages">
+                        <div class="list-page-1">
+                            <a class="list-item " href="index.html"><i
+                                    class="material-icons left-sb-icons align-middle">card_travel</i>
+                                <span class=""> Dashboard </span> </a>
+                        </div>
+                        <div class="left-sidehead"><span>Dashboard</span></div>
+                        <div class="list-page-2">
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Campaign
+                                </span> </a>
+                            <a href="leads.html" class="list-item list-focus item-focus"> <i
+                                    class="material-icons left-sb-icons align-middle">local_bar</i>
+                                <span>
+                                    Leads</span> </a>
+                            <a href="#" class="list-item"> <i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Pending
+                                </span> </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">speaker_notes</i>
+                                <span>
+                                    Follow up
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Contacted
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Closed
+                                </span>
+                            </a>
+
+                        </div>
+                        <div class="left-sidehead"><span>Others</span></div>
+                        <div class="list-page-2">
+                            <a href="#" class="list-item"> <i
+                                    class="material-icons left-sb-icons align-middle">calendar_today</i>
+                                <span>
+                                    Calender
+                                </span> </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Users
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Profile
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Help
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-left-sidebar">
+                        <div class="row footer-row-1">
+                            <img   class="rounded-circle foo-img" 
+                                src="https://i.ytimg.com/vi/sPLvdKuea5M/maxresdefault.jpg" alt="" srcset="">
+                            <div class="foo-text-1">
+                                <p class="foo-text-1-big">The Grand By Hyatt </p>
+                                <p class="foo-text-1-small">MANAGER</p>
+                            </div>
+                        </div>
+                        <div class="footer-row-2">
+                            <button class="btn btn-regular footer-button">
+                                <p class="footer-btn-text">SIGNOUT</p>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- End of Left-sidebar -->
+
+
+            <!-- Start of Center Container -->
+
+            <div class="col-lg-7 center-main" onclick="hidesidebar();">
+
+
+                <!--Start of First row  -->
+
+
+                <div class="container leads-center-row1">
+                <div class="searchcontainer">
+                    <input type="text" placeholder="SEARCH" class="searchbox">
+                    <button class="searchbutton"><i class="fas fa-search searchIcon"></i> </button>
+                </div>
+                <button class="text-white create-campaign-button"><i
+                    class="fas fa-plus-circle create-campaign-button-icon "></i><p
+                    class="create-campaign-button-text"> CREATE
+                    CAMPAIGN </p>
+            </button>
+               </div>
+
+
+               <!-- end of first row -->
+
+
+               <!-- second row -->
+
+               <div class="row leads-center-row2">
+                   <div class="col-lg-9 leads-center-row2-1">
+
+                    <p class="main-text"> The Grand By Hyatt Campaign  </p>
+                    <div class="picontainer"><img  class="rounded-circle main-image"  src="tablepp1.jpg" alt="">
+                    <img  class="rounded-circle main-image" src="tablepp2.jpg" alt="">
+                    <img  class="rounded-circle main-image" src="tablepp3.jpg" alt="">
+                    
+                    </div>
+
+                   </div>
+                   <div class="col-lg-3 leads-center-main-row2-2">
+                    <img class="info-img" src="https://img.icons8.com/android/24/000000/info.png">
+
+                    </div>
+
+               </div>
+
+               <div class="row leads-center-main-row3">
+
+                <div class="button-containers">
+                    <button class="btn btn-regular leads-center-main-row3-btn"> <i class="fas fa-align-left bt-icons "></i> <span> SORT BY</span> 
+                    
+                    <i class="fas fa-chevron-down bt-icons"></i>
+                    </button>
+                    
+                    <button class="btn btn-regular leads-center-main-row3-btn"> <i class="fas fa-calendar-alt bt-icons "></i> <span> ANY DATE</span> 
+                    
+                        <i class="fas fa-chevron-down bt-icons"></i>
+                        </button>
+                        
+
+
+                </div>
+
+
+               </div>
+
+               <div class="container leads-center-main-row4">
+
+                <div class="row leads-center-main-row4-1">
+                    <div class="col-lg-9 selection-website">
+                        <ul class="leads">
+                            <li class="leads-choose active"> All Leads </li>
+                            <li class="leads-choose"> Contacted </li>
+                            <li class="leads-choose"> Folow Up </li>
+                            <li class="leads-choose"> Pending </li>
+                            <li class="leads-choose"> Closed </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-block d-sm-none option-column">
+                        <select class="select-table" name="" id="">
+                            <option class="optionvalue" value="All Leads"> All Leads</option>
+                            <option class="optionvalue" value="Contacted"> Contacted</option>
+                            <option class="optionvalue" value="Folow up"> Follow up</option>
+                            <option class="optionvalue" value="Pending"> Pending</option>
+                            <option class="optionvalue" value="Closed"> Closed</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3 leads-icon-main">
+                        <div class="icon-container">
+                            <i class="fas fa-print leads-icon"></i>
+                            <i class="fas fa-trash leads-icon"></i>
+                            <i class="fas fa-upload leads-icon"></i>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                    <div class="container leads-center-main-row4-2">
+                        <table class="leads-table">
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine">
+                                        <label class="custom-control-label" for="mine"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp1.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine1">
+                                        <label class="custom-control-label" for="mine1"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp1.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine2">
+                                        <label class="custom-control-label" for="mine2"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp2.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine3">
+                                        <label class="custom-control-label" for="mine3"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp3.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine4">
+                                        <label class="custom-control-label" for="mine4"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp1.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine5">
+                                        <label class="custom-control-label" for="mine5"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp6.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine6">
+                                        <label class="custom-control-label" for="mine6"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp5.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine7">
+                                        <label class="custom-control-label" for="mine7"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp1.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine8">
+                                        <label class="custom-control-label" for="mine8"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp1.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+                            <tr class="tablerow">
+                                
+                                <td class="datacell">
+                                    <div class="custom-control custom-checkbox mycheckbox">
+                                        <input type="checkbox" class="custom-control-input myinputcheck" id="mine9">
+                                        <label class="custom-control-label" for="mine9"></label>
+                                    </div>
+                                </td>
+                                <td class="datacell">
+                                    <img class="rounded-circle table-img" src="tablepp1.jpg" alt="">
+                                </td>
+                                <td class="datacell">
+                                     Mario spedwagon
+                                </td>
+                                <td class="datacell">
+                                    +91 8197769977
+                                </td>
+                                <td class="datacell">
+                                    peteycruier@gmail.com
+                                </td>
+                                <td class="datacell">
+                                    19.09.2019
+                                </td>
+                                <td class="datacell">
+
+                                    <button class="action-button">
+                                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                                    </button>
+
+                                </td>
+
+
+                            </tr>
+
+                        </table>
+                    </div>
+
+               </div>
+
+
+               <div class="row leads-center-main-row5">
+
+                <span class="page-number">
+                    21-30 of 126
+                </span>
+
+                <nav class="pagein" aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item  pn">
+                        <a class="page-link " href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item pn">
+                        <a class="page-link " href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+               </div>
+
+
+            </div>
+
+
+
+
+            <!-- Center part ends  here  -->
+
+
+
+            <!-- Right part starts here -->
+
+            <div class="col-lg-3 right-main">
+
+
+                <div class="container right-main-container">
+
+                    <div class="right-title">
+                        <p class="right-main-text"> The Grand By Hyatt Campaign</p>
+                    </div>
+                <div class="container-fluid right-main-con underline">
+                    <div class="container right-main-1">
+                        <div class="container-fluid right-main-1-inner-1">
+                            <img class="rounded-circle right-img" src="tablepp4.jpg" alt="">
+                            
+                                <p class="right-text-inner"> Petey Cruiser</p>
+                        
+                            <p class="right-small-text text-white"> New </p>
+
+                            
+                        </div>
+                       
+                        <div class="row right-inner-row1">
+                            <div class="phonenumber">+91 85476 65824</div>
+                            <button class="rounded-circle text-white button123"> <i class="fas fa-phone-alt"></i></button>
+                        </div>
+                        <div class="row right-inner-row1 ">
+                            <div class="phonenumber">peteycruiser@gmail.com</div>
+                            <button class="rounded-circle text-white button123"> <i class="fas fa-envelope"></i></button> </div>
+
+
+
+
+                    </div>
+
+                    
+
+                </div>
+                <div class="container right-main-row3">
+                    <p class="interest-text">Interested</p>
+                    
+                    <label class="
+                     radiobutton">Buying
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class=" radiobutton">Visiting
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+
+                </div>
+
+
+                <div class="container right-main-row3 right-main-row3-1 ">
+
+                    <p class="interest-text">Best time to buy </p>
+
+                    <div class="row availability-row">
+                        <div class="container datepicker">
+                            <p class="dp-inner"> Date</p>
+                            <div class="row dp-row">
+                               <span> April</span> <span>18</span> 
+                            <span>2018</span>
+                            
+                            </div>
+                            <div class="row dp-row">
+                                <span> April</span> <span>18</span> 
+                             <span>2018</span>
+                             
+                             </div><div class="row dp-row">
+                                <span> April</span> <span>18</span> 
+                             <span>2018</span>
+                             
+                             </div>
+                        </div>
+                        <div class="container timepicker">
+                            <p class="tp-inner">Time</p>
+                            <p class="tp-inner-big">4:30</p>
+                            <div class="row meridian-picker">
+                                <button id="mer-button1" class="mer-button" onclick="merpic1();">AM</button>
+                                <button id="mer-button2" class="mer-button" onclick="merpic2();">PM</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="container right-main-container4 ">
+
+                <p class="interest-text note-text">Note </p>
+                    <p class="word-count note-text">250/1000 words</p>
+                    <textarea name="" id="" cols="25" rows="6" class="mytext"></textarea>
+                    
+
+
+                </div>
+
+                  <!-- r p  u   y  =
+                file:///home/rajeshki2/Documents/dboard/User%20Campaign_leads%20List.jpg
+                
+                bgonge
+                
+                lcade
+
+                stats
+
+
+                lklk
+
+                
+                -->
+
+                  <div class ="right-main-container5">
+
+                    <div class="row lcade">
+                    <p class="stats"> Status </p>
+                    <button class="action-button bgonge">
+                        <span class="action-text" >Actions </span> <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    </div>
+                  </div>
+                  <div class ="right-main-container5-a">
+                  <button class ="btn btn-basic align-middle lklk "><i class ="fas fa-chevron-down" ></i> <span class ="masm" >SUBMIT</span> </button> 
+
+                </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+</body>
+
+</html>

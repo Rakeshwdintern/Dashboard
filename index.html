@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:500|Ubuntu|Nunito&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="piechart.css">
+    <script src="sidebar.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid main-container">
+        <div class="row main-row">
+
+
+
+            <!-- Mobile Sidebar -->
+
+
+
+            <div class="row d-flex d-sm-none headerbar">
+                <div class="logo-brand">
+                    <img src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="menuselect">
+                    <i class="fas fa-bars " onclick="showsidebar();"></i>
+                </div>
+            </div>
+            
+            <div class="row headerbar1">
+                <div class="logo-brand">
+                    <img src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="menuselect">
+                    <i class="fas fa-bars " onclick="showsidebar1();"></i>
+                </div>
+            </div>
+            
+            <div id="tablet-only" class="tablet-only">
+                <div class="logo-brand">
+                    <img src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="list-pages mob-list-pages">
+                    <div class="list-page-1 list-focus">
+                        <a class="list-item item-focus" href="index.html"><i
+                                class="material-icons left-sb-icons align-middle">card_travel</i>
+                            <span class=""> Dashboard </span> </a>
+                    </div>
+                    <div class="left-sidehead"><span>Dashboard</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Campaign
+                            </span> </a>
+                        <a href="Leads.html" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">local_bar</i>
+                            <span>
+                                Leads</span> </a>
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                Pending
+                            </span> </a>
+                        <a href="#" class="list-item"><i
+                                class="material-icons left-sb-icons align-middle">speaker_notes</i>
+                            <span>
+                                Follow up
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Contacted
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Closed
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="left-sidehead"><span>Others</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">calendar_today</i>
+                            <span>
+                                Calender
+                            </span> </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Users
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Profile
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Help
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-left-sidebar mobile-footer">
+                    <div class="row footer-row-1">
+                        <img class="rounded-circle foo-img" src="https://i.ytimg.com/vi/sPLvdKuea5M/maxresdefault.jpg"
+                            alt="" srcset="">
+                        <div class="foo-text-1">
+                            <p class="foo-text-1-big">The Grand By Hyatt </p>
+                            <p class="foo-text-1-small">MANAGER</p>
+                        </div>
+                    </div>
+                    <div class="footer-row-2">
+                        <button class="btn btn-regular footer-button">
+                            <p class="footer-btn-text">SIGNOUT</p>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="container d-block d-sm-none sidebar-mobile" id="sidebar-mobile">
+                <div class="logo-brand">
+                    <img src="builder.png" class="mob-logo" alt="">
+                </div>
+                <div class="list-pages mob-list-pages">
+                    <div class="list-page-1 list-focus">
+                        <a class="list-item item-focus" href="index.html"><i
+                                class="material-icons left-sb-icons align-middle">card_travel</i>
+                            <span class=""> Dashboard </span> </a>
+                    </div>
+                    <div class="left-sidehead"><span>Dashboard</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Campaign
+                            </span> </a>
+                        <a href="Leads.html" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">local_bar</i>
+                            <span>
+                                Leads</span> </a>
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                Pending
+                            </span> </a>
+                        <a href="#" class="list-item"><i
+                                class="material-icons left-sb-icons align-middle">speaker_notes</i>
+                            <span>
+                                Follow up
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Contacted
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Closed
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="left-sidehead"><span>Others</span></div>
+                    <div class="list-page-2">
+                        <a href="#" class="list-item"> <i
+                                class="material-icons left-sb-icons align-middle">calendar_today</i>
+                            <span>
+                                Calender
+                            </span> </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Users
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Profile
+                            </span>
+                        </a>
+                        <a href="#" class="list-item"><i class="material-icons left-sb-icons align-middle">dashboard</i>
+                            <span>
+                                Help
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-left-sidebar mobile-footer">
+                    <div class="row footer-row-1">
+                        <img class="rounded-circle foo-img" src="https://i.ytimg.com/vi/sPLvdKuea5M/maxresdefault.jpg"
+                            alt="" srcset="">
+                        <div class="foo-text-1">
+                            <p class="foo-text-1-big">The Grand By Hyatt </p>
+                            <p class="foo-text-1-small">MANAGER</p>
+                        </div>
+                    </div>
+                    <div class="footer-row-2">
+                        <button class="btn btn-regular footer-button">
+                            <p class="footer-btn-text">SIGNOUT</p>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+            <!-- Desktop Sidebar Started -->
+
+            <div class="col-lg-2 left-main">
+
+                <div class="container sidebar-desktop">
+                    <div class="brand">
+                        <img src="builder.png" alt="" class="brand-img">
+                        <p class="brand-text">BUILDERSLEAD</p>
+                    </div>
+                    <div class="list-pages">
+                        <div class="list-page-1 list-focus">
+                            <a class="list-item item-focus" href="index.html"><i
+                                    class="material-icons left-sb-icons align-middle">card_travel</i>
+                                <span class=""> Dashboard </span> </a>
+                        </div>
+                        <div class="left-sidehead"><span>Dashboard</span></div>
+                        <div class="list-page-2">
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Campaign
+                                </span> </a>
+                            <a href="Leads.html" class="list-item"> <i
+                                    class="material-icons left-sb-icons align-middle">local_bar</i>
+                                <span>
+                                    Leads</span> </a>
+                            <a href="#" class="list-item"> <i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Pending
+                                </span> </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">speaker_notes</i>
+                                <span>
+                                    Follow up
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Contacted
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Closed
+                                </span>
+                            </a>
+
+                        </div>
+                        <div class="left-sidehead"><span>Others</span></div>
+                        <div class="list-page-2">
+                            <a href="#" class="list-item"> <i
+                                    class="material-icons left-sb-icons align-middle">calendar_today</i>
+                                <span>
+                                    Calender
+                                </span> </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Users
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Profile
+                                </span>
+                            </a>
+                            <a href="#" class="list-item"><i
+                                    class="material-icons left-sb-icons align-middle">dashboard</i> <span>
+                                    Help
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-left-sidebar">
+                        <div class="row footer-row-1">
+                            <img class="rounded-circle foo-img"
+                                src="https://i.ytimg.com/vi/sPLvdKuea5M/maxresdefault.jpg" alt="" srcset="">
+                            <div class="foo-text-1">
+                                <p class="foo-text-1-big">The Grand By Hyatt </p>
+                                <p class="foo-text-1-small">MANAGER</p>
+                            </div>
+                        </div>
+                        <div class="footer-row-2">
+                            <button class="btn btn-regular footer-button">
+                                <p class="footer-btn-text">SIGNOUT</p>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- End of Left-sidebar -->
+
+
+            <!-- Start of Center Container -->
+
+            <div class="col-lg-7 center-main" onclick="hidesidebar();">
+                <div class="container-fluid center-main-child">
+                    <div class="row center-main-row1">
+                        <button class="btn btn-regular rounded-circle text-white calender-button "><i
+                                class="fas fa-calendar-week calender-icon"></i>
+                        </button>
+                        <button class="btn btn-regular text-white create-campaign-button"><i
+                                class="fas fa-plus-circle create-campaign-button-icon "></i><span
+                                class="create-campaign-button-text"> CREATE
+                                CAMPAIGN </span>
+                        </button>
+                    </div>
+                    <div class="row center-main-row2">
+                        <div class="row center-main-row2-1">
+                            <div class="center-main-row-2-sidehead">
+                                Active Campaign's
+                            </div>
+                        </div>
+                        <div class="row folder-row">
+                            <div class="col-lg-4 xs-12 xl-4">
+                                <div class="container folder-cotainer">
+                                    <div class="row folder-inner-row-1">
+                                        <span class="folder-date">
+                                            <i class="fas fa-history"></i>
+                                            30th Aug
+                                        </span></div>
+                                    <div class="row folder-inner-row-2">
+                                        <span class="foler-inner-row-2-text"> Total Leads Received</span>
+                                        <i class="text-white  fas fa-arrow-right "></i>
+                                    </div>
+                                    <div class="row folder-inner-row-3">
+                                        <span class="folder-big-text text-white">654</span>
+                                    </div>
+                                    <div class="row folder-inner-row-4">
+                                        <span class="folder-inner-row-4-text-1"> Campaign name</span> <br>
+                                        <span class="folder-inner-row-4-text-1 text-white"> The Grand By Hyatt
+                                            Campaign</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 xs-12 xl-4">
+                                <div class="container folder-cotainer1">
+                                    <div class="row folder-inner-row-1">
+                                        <span class="folder-date">
+                                            <i class="fas fa-history"></i>
+                                            30th Aug
+                                        </span></div>
+                                    <div class="row folder-inner-row-2">
+                                        <span class="foler-inner-row-2-text"> Total Leads Received</span>
+                                        <i class="fas fa-arrow-right "></i>
+                                    </div>
+                                    <div class="row folder-inner-row-3">
+                                        <span class="folder-big-text">247</span>
+                                    </div>
+                                    <div class="row folder-inner-row-4">
+                                        <span class="folder-inner-row-4-text-1"> Campaign name</span> <br>
+                                        <span class="folder-inner-row-4-text-1"> The Grand By Hyatt
+                                            Campaign</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 xs-12 xl-4">
+                                <div class="container folder-cotainer1">
+                                    <div class="row folder-inner-row-1">
+                                        <span class="folder-date">
+                                            <i class="fas fa-history"></i>
+                                            30th Aug
+                                        </span></div>
+                                    <div class="row folder-inner-row-2">
+                                        <span class="foler-inner-row-2-text"> Total Leads Received</span>
+                                        <i class="fas fa-arrow-right "></i>
+                                    </div>
+                                    <div class="row folder-inner-row-3">
+                                        <span class="folder-big-text">182</span>
+                                    </div>
+                                    <div class="row folder-inner-row-4">
+                                        <span class="folder-inner-row-4-text-1"> Campaign name</span> <br>
+                                        <span class="folder-inner-row-4-text-1"> The Grand By Hyatt
+                                            Campaign</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-main-row3">
+                        <div class="row center-main-row3-1">
+                            <div class="center-main-row-2-sidehead2">
+                                Weekly Insights
+                            </div>
+                            <div class="details"> <span class="tfd"> tap for details</span></div>
+                        </div>
+                    </div>
+                    <div class="row center-main-row3-2">
+                        <div class="col-lg-12 xs-12 xl-12">
+                            <div class="container rect-box">
+                                <div class="row rect-box-row">
+                                    <div class="col-lg-9 rect-box-1">
+                                        <img class="rect-box-img" src="graph.png" alt="">
+                                    </div>
+                                    <div class="col-lg-3 rect-box-text">
+                                        <div class="container text-main-rect-box">
+                                            <div class="text-box">
+                                                <button class="color-button"></button>
+                                                <p class="small-text"> Campaign name</p>
+                                            </div>
+                                            <p class="big-text"> The Grand By Hyatt campaign</p>
+
+                                            <div class="text-box">
+                                                <button class="color-button1"></button>
+                                                <p class="small-text"> Campaign name</p>
+                                            </div>
+                                            <p class="big-text"> The Grand By Hyatt campaign</p>
+
+                                            <div class="text-box">
+                                                <button class="color-button2"></button>
+                                                <p class="small-text"> Campaign name</p>
+                                            </div>
+                                            <p class="big-text"> The Grand By Hyatt campaign</p>
+
+
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" row center-main-row-4">
+                        <div class="center-main-row-2-sidehead1"> New Leads </div>
+                        <div class="select-section">
+                            <select class="selectbox" id="">
+                                <option value="ransom">CAMPAIGN NAME</option>
+                                <option value="ransom">CAMPAIGN NAME</option>
+
+                            </select>
+                            <div class="ptext">
+                                <p class="small-text1">view all</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row main-table-row">
+                        <table class="table-main">
+                            <tbody>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp1.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i>
+
+
+                                    </td>
+                                </tr>
+
+
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp2.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp3.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell "> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp4.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell "> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp5.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp6.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp1.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp1.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp1.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+                                <tr class="tablerow">
+
+
+                                    <td class="tablecell"><img class="table-image rounded-circle" src="tablepp1.jpg"
+                                            alt=""></td>
+                                    <td class="tablecell"> Mario Speedwagen</td>
+                                    <td class="tablecell secondary">mariospeedwagen@gmail.com </td>
+                                    <td class="tablecell secondary">9224820264</td>
+                                    <td class="tablecell secondary">19.02.2019</td>
+                                    <td class="tablecell1 secondary">
+                                        <div class="icons align-middle"> <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-history"></i>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-ellipsis-h"></i>
+
+                                        </div>
+                                    </td>
+                                    <td class="d-block d-sm-none tablecell align-middle"> <i
+                                            class="fas fa-chevron-down"></i> </td>
+                                </tr>
+
+
+
+
+
+
+
+
+
+
+
+                            </tbody>
+
+
+
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- Center part ends  here  -->
+
+
+
+
+
+            <div class="col-lg-3 right-main">
+                <div class="row right-row-1">
+                    <div class="searchcontainer">
+                        <input type="text" placeholder="SEARCH" class="searchbox">
+                        <button class="searchbutton"><i class="fas fa-search searchIcon"></i> </button>
+                    </div>
+
+                </div>
+                <div class="row right-row-2">
+                    <div class="right-sidehead-1">
+                        <p class="right-sidehead-text">Statistics</p>
+                    </div>
+                    <div class="right-selection">
+                        <select class="right-select-box" name="" id="">
+                            <option class="select-inner-box" value="">CAMPAIGN NAME</option>
+                            <option class="select-inner-box" value=""> select campaign</option>
+                            <option class="select-inner-box" value=""> select campaign </option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container right-row-3">
+                    <div class="container right-row-3-1">
+                        <div class="right-row-3-1-text">
+                            <p class="right-text-small">Total Leads</p>
+                            <p class="right-text-big">Contacted</p>
+                        </div>
+                        <div class="right-row-3-1-graph">
+                            <div class="progress-circular">
+
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-30">
+                                        <span class="label l1">156</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="subscript">yesterday</p>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="container right-row-3-1">
+                        <div class="right-row-3-1-text">
+                            <p class="right-text-small">Total Leads</p>
+                            <p class="right-text-big">Follow Up</p>
+                        </div>
+                        <div class="right-row-3-1-graph">
+                            <div class="progress-circular">
+
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-92">
+                                        <span class="label">92</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="subscript">yesterday</p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="container right-row-3-1">
+                        <div class="right-row-3-1-text">
+                            <p class="right-text-small">Total Leads</p>
+                            <p class="right-text-big">Pending</p>
+                        </div>
+                        <div class="right-row-3-1-graph">
+                            <div class="progress-circular">
+
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-12">
+                                        <span class="label">12</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="subscript">yesterday</p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="container right-row-3-1">
+                        <div class="right-row-3-1-text">
+                            <p class="right-text-small">Total Leads</p>
+                            <p class="right-text-big">Closed</p>
+                        </div>
+                        <div class="right-row-3-1-graph">
+                            <div class="progress-circular">
+
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-320">
+                                        <span class="label">320</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="subscript">yesterday</p>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <!-- Containers with graphs end here -->
+
+                <div class="container upgrade-img">
+                    <img src="upgrade.PNG" class="upgrade-img-content" alt="">
+                </div>
+                <div class="container upgrade-btn">
+                    <button class="btn btn-warning upgrade-btn-content"> <i class="fas fa-trophy"></i>
+                        <p class="upgrade-text"> UPGRADE PLAN </p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
